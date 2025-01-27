@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEMO FILMS</title>
+    <link rel="icon" href="img/favicon.ico/cinema-vector-illustration-png_242108-_1_.ico" type="image/x-icon">
+    <style>
+        /* Fondo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background: url(img/cine.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background: url(img/ladrillos.jpg) repeat no-repeat center;
+            background-size: 70%;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            border-bottom: 4px solid #ff6347;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.3em;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffa07a;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff4500;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        /* Secciones */
+        .section {
+            margin-bottom: 40px;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #282828;
+            border-left: 5px solid #ff4500;
+        }
+
+        /* Títulos de sección */
+        .section h2 {
+            font-size: 2.2em;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+
+        /* Clásicos */
+        #clasicos {
+            background-color: #3b3b3b;
+            border-left: 5px solid #ffa07a;
+        }
+
+        /* Top Ventas */
+        #topventas {
+            background-color: #2a2a2a;
+            border-left: 5px solid #4682b4;
+        }
+
+        /* Novedades */
+        .reviews {
+            background-color: #1e1e1e;
+            border-left: 5px solid #32cd32;
+        }
+
+        /* Tarjetas de reseñas */
+        .review-card {
+            background-color: #444;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .review-card img {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .review-card h3 {
+            font-size: 1.8em;
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        .review-card p {
+            margin: 10px 0;
+        }
+
+        .rating {
+            color: #ffd700;
+        }
+
+        /* Formulario */
+        .form {
+            background-color: #2b2b2b;
+            border-left: 5px solid #87ceeb;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #ffa07a;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #444;
+            color: #ffa07a;
+        }
+
+        input[type="submit"] {
+            background-color: #ffa07a;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Sobre mí */
+        .about {
+            background-color: #383838;
+            border-left: 5px solid #d2691e;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #ff4500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a JemoFilms</h1>
+        <p>¡Tu lugar favorito para alquilar películas y leer reseñas!</p>
+    </header>
+    <nav>
+        <a href="#novedades">Novedades</a>
+        <a href="#clasicos">Clásicos</a>
+        <a href="#topventas">Top Ventas</a>
+        <a href="#formulario">Reservar</a>
+        <a href="#sobremi">Sobre mí</a>
+    </nav>
+    <main>
+        <section class="section options">
+            <h2>Opciones para Clientes</h2>
+            <ul>
+                <li><strong>Novedades:</strong> Las películas más recientes para ti.</li>
+                <li><strong>Clásicos:</strong> Disfruta de las películas que han marcado historia.</li>
+                <li><strong>Top Ventas:</strong> Las películas más populares y alquiladas.</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Clásicos -->
+        <section class="section options" id="clasicos">
+            <h2>Clásicos</h2>
+            <div class="review-card">
+                <img src="img/ElPadrino.jpg" alt="Cartel de El Padrino">
+                <div>
+                    <h3>El Padrino</h3>
+                    <p>Una de las películas más influyentes de la historia del cine. Una saga de crimen y familia que ha
+                        dejado huella en generaciones.</p>
+                    <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/Casablanca.jpg" alt="Cartel de Casablanca">
+                <div>
+                    <h3>Casablanca</h3>
+                    <p>Un clásico del cine romántico ambientado durante la Segunda Guerra Mundial. La historia de amor
+                        más emblemática del cine.</p>
+                    <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/Loqueelviento.jpg" alt="Cartel de Lo que el viento se llevó">
+                <div>
+                    <h3>Lo que el viento se llevó</h3>
+                    <p>Una épica historia de amor y guerra, famosa por sus escenas inolvidables y personajes icónicos.
+                    </p>
+                    <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Top Ventas -->
+        <section class="section options" id="topventas">
+            <h2>Top Ventas</h2>
+            <div class="review-card">
+                <img src="img/AvengersEndgame.jpg" alt="Cartel de Avengers: Endgame">
+                <div>
+                    <h3>Avengers: Endgame</h3>
+                    <p>El desenlace épico de la saga de los Vengadores. Una película cargada de acción, emoción y
+                        momentos que marcaron la historia del cine.</p>
+                    <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/JurassicWorld.jpg" alt="Cartel de Jurassic World">
+                <div>
+                    <h3>Jurassic World</h3>
+                    <p>Una nueva aventura en el parque temático de dinosaurios. Una mezcla de acción, aventuras y
+                        efectos especiales impresionantes.</p>
+                    <p class="rating">⭐️⭐️⭐️⭐️☆</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/Frozen2.jpg" alt="Cartel de Frozen 2">
+                <div>
+                    <h3>Frozen 2</h3>
+                    <p>La secuela del exitoso filme Frozen, llena de música, magia y nuevos secretos del reino de
+                        Arendelle.</p>
+                    <p class="rating">⭐️⭐️⭐️⭐️☆</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Novedades -->
+        <section class="section reviews">
+            <h2>Novedades</h2>
+            <div class="review-card">
+                <img src="img/LaUltimaAventura.jpg" alt="Cartel de La Última Aventura">
+                <div>
+                    <h3>La Última Aventura</h3>
+                    <p>Una emocionante historia de acción que te mantendrá al borde de tu asiento. ¡Una de las mejores
+                        películas del año!</p>
+                    <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/Regresedelheroe.jpg" alt="Cartel de El Regreso del Héroe">
+                <div>
+                    <h3>El Regreso del Héroe</h3>
+                    <p>Una secuela impresionante que supera a la original. Con escenas de acción espectaculares y una
+                        trama emocionante.</p>
+                    <p class="rating">⭐️⭐️⭐️⭐️☆</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/LaHistoriaPerdida.jpg" alt="Cartel de La Historia Perdida">
+                <div>
+                    <h3>La Historia Perdida</h3>
+                    <p>Una película de suspenso que juega con la mente del espectador, pero su final podría haber sido
+                        mejor.</p>
+                    <p class="rating">⭐️⭐️⭐️☆☆</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Reserva -->
+        <section class="section form">
+            <h2>Reservar Películas</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="movie">Película:</label>
+                <select id="movie" name="movie" required>
+                    <option value="novedad">Novedad</option>
+                    <option value="clasico">Clásico</option>
+                    <option value="top">Top Ventas</option>
+                </select>
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <input type="submit" value="Reservar Película">
+            </form>
+        </section>
+
+        <!-- Sección "Sobre mí" -->
+        <section class="section about">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Antonio Jesus Morales Cazorla. Apasionado del cine desde que era pequeño, he creado este
+                videoclub con el objetivo de compartir mi amor por las películas con todos ustedes. Me encanta ver y
+                analizar diferentes géneros, desde los más clásicos hasta los últimos estrenos. Mi misión es ofrecerte
+                una experiencia única, donde puedas encontrar tanto los grandes éxitos de taquilla como joyas
+                cinematográficas menos conocidas.</p>
+            <p>Gracias por visitar mi videoclub. Espero que disfrutes de la selección de películas y reseñas que he
+                preparado para ti. Si tienes alguna duda o recomendación, no dudes en ponerte en contacto conmigo.</p>
+        </section>
+    </main>
+</body>
+
+</html>
